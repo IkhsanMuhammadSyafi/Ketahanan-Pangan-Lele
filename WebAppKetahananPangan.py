@@ -82,7 +82,7 @@ if menu == "Tambah Data":
         kategori = st.selectbox("Kategori", ["Harian","Mingguan","Bulanan","Tahunan"])
         jenis = st.radio("Jenis", ["Pemasukan","Pengeluaran"])
         keterangan = st.text_input("Keterangan - Pemasukan/Pengeluaran", placeholder="Misal: Lele terjual ... kg")
-        jumlah = st.number_input("Jumlah", min_value=0.0, step=1000.0)
+        jumlah = st.number_input("Jumlah (Rp)", min_value=0.0, step=1000.0)
         submit = st.form_submit_button("Simpan")
 
         if submit:
